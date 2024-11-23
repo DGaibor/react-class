@@ -5,6 +5,15 @@ export const EditUser = () => {
     
     const {user, setUser} = useContext(UserContext);
     
+    const player = {
+        level: 50,
+        name: "John",
+        health: 100,
+        updateLevel: function () {
+            this.level += 1;
+        }
+    }
+    
     return (<>
         <h1>User Form</h1>
         <div>

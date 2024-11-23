@@ -12,9 +12,13 @@ export const Counter = () => {
     
     }
     useEffect(() => {
+        
       const intervalId = addSeconds();
+      
+      
          return ()=>{
            //se va a ejecutar cuanto el componte se desmonte  
+             
              clearInterval(intervalId);
              
          }
